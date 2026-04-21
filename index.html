@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RITA IA</title>
 
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff0000" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <header class="topbar">
+      <div class="logo">
+        <div class="eye"></div>
+      </div>
+      <div class="title">
+        <h1>RITA IA</h1>
+        <p id="status">Bienvenido, Yei. Sistema listo.</p>
+      </div>
+    </header>
+
+    <section class="settings">
+      <input id="apiKey" type="password" placeholder="Pega tu Gemini API Key aquí" />
+      <button id="saveKeyBtn">Guardar</button>
+      <button id="clearKeyBtn">Borrar</button>
+    </section>
+
+    <section class="quick">
+      <button class="qbtn" data-prompt="Crea un anuncio para Meta Ads muy comercial y humanizado.">Meta Ads</button>
+      <button class="qbtn" data-prompt="Crea un guion comercial de 30 segundos para un video.">Guion 30s</button>
+      <button class="qbtn" data-prompt="Crea una cotización profesional en formato texto lista para PDF.">Cotización</button>
+      <button class="qbtn" data-prompt="Crea una idea creativa para una imagen publicitaria premium.">Idea Imagen</button>
+    </section>
+
+    <main id="chat" class="chat"></main>
+
+    <footer class="inputbar">
+      <button id="micBtn" class="mic">🎙</button>
+      <input id="userInput" type="text" placeholder="Escribe tu comando..." />
+      <button id="sendBtn" class="send">➤</button>
+    </footer>
+
+    <footer class="tools">
+      <button id="exportBtn">Exportar PDF</button>
+      <button id="clearChatBtn">Borrar Chat</button>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
