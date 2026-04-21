@@ -1,1 +1,184 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+body{
+  background:#000;
+  color:white;
+}
+
+.app{
+  max-width:520px;
+  margin:auto;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  padding:12px;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:12px;
+  border:1px solid rgba(255,0,0,0.4);
+  border-radius:16px;
+  background:rgba(255,0,0,0.05);
+  box-shadow:0 0 20px rgba(255,0,0,0.15);
+}
+
+.eye{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  border:2px solid red;
+  box-shadow:0 0 20px red;
+  position:relative;
+}
+
+.eye::after{
+  content:"";
+  width:18px;
+  height:18px;
+  background:red;
+  border-radius:50%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:0 0 15px red;
+}
+
+.title h1{
+  font-size:18px;
+  color:red;
+  letter-spacing:2px;
+}
+
+.title p{
+  font-size:12px;
+  opacity:0.8;
+}
+
+.settings{
+  display:flex;
+  gap:8px;
+  margin-top:10px;
+}
+
+.settings input{
+  flex:1;
+  padding:10px;
+  border-radius:12px;
+  border:1px solid rgba(255,0,0,0.5);
+  background:#111;
+  color:white;
+}
+
+.settings button{
+  padding:10px;
+  border-radius:12px;
+  border:none;
+  background:red;
+  color:white;
+  font-weight:bold;
+}
+
+.quick{
+  display:flex;
+  gap:8px;
+  margin-top:10px;
+  flex-wrap:wrap;
+}
+
+.qbtn{
+  flex:1;
+  padding:10px;
+  border-radius:14px;
+  border:1px solid rgba(255,0,0,0.6);
+  background:rgba(255,0,0,0.08);
+  color:white;
+  font-size:12px;
+}
+
+.chat{
+  flex:1;
+  overflow-y:auto;
+  margin-top:12px;
+  padding:10px;
+  border-radius:16px;
+  border:1px solid rgba(255,0,0,0.3);
+  background:rgba(255,0,0,0.03);
+}
+
+.msg{
+  margin-bottom:12px;
+  padding:10px;
+  border-radius:14px;
+  max-width:90%;
+  line-height:1.4;
+  font-size:14px;
+}
+
+.user{
+  background:rgba(255,0,0,0.2);
+  border:1px solid rgba(255,0,0,0.6);
+  margin-left:auto;
+}
+
+.bot{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,0,0,0.25);
+}
+
+.inputbar{
+  display:flex;
+  gap:8px;
+  margin-top:10px;
+}
+
+.inputbar input{
+  flex:1;
+  padding:12px;
+  border-radius:14px;
+  border:1px solid rgba(255,0,0,0.5);
+  background:#111;
+  color:white;
+}
+
+.mic{
+  width:50px;
+  border-radius:14px;
+  border:none;
+  background:rgba(255,0,0,0.2);
+  border:1px solid rgba(255,0,0,0.6);
+  font-size:18px;
+}
+
+.send{
+  width:50px;
+  border-radius:14px;
+  border:none;
+  background:red;
+  color:white;
+  font-size:18px;
+}
+
+.tools{
+  display:flex;
+  gap:8px;
+  margin-top:10px;
+}
+
+.tools button{
+  flex:1;
+  padding:10px;
+  border-radius:14px;
+  border:1px solid rgba(255,0,0,0.6);
+  background:rgba(255,0,0,0.08);
+  color:white;
+  font-weight:bold;
+}
